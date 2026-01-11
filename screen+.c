@@ -1,15 +1,3 @@
-/*
- * x11-spi-display.c
- * 
- * Simple X11 screen capture to SPI display driver for Orange Pi
- * Captures X11 framebuffer and sends to 240x320 SPI display with rotation support
- * 
- * Usage: DISPLAY=:0 sudo ./x11-spi-display [color_mode] [rotation]
- *        color_mode: 1-4 (try if colors are wrong)
- *        rotation: 0, 90, 180, 270 (degrees clockwise)
- * 
- * Example: DISPLAY=:0 sudo ./x11-spi-display 1 90
- */
 
 #define _GNU_SOURCE
 #include <stdio.h>
